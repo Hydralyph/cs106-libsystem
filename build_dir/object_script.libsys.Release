@@ -1,0 +1,13 @@
+release/addmod_users.o
+release/admin.o
+release/bookdetails.o
+release/filesystem.o
+release/login.o
+release/main.o
+release/mainwindow.o
+release/useraccountsystem.o
+release/moc_addmod_users.o
+release/moc_admin.o
+release/moc_bookdetails.o
+release/moc_login.o
+release/moc_mainwindow.o

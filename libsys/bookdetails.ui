@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>bookdetails</class>
+ <widget class="QDialog" name="bookdetails">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>732</width>
+    <height>514</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>110</y>
+     <width>391</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Genre 2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="lineEdit"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Author</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QComboBox" name="comboBox">
+      <item>
+       <property name="text">
+        <string>Action</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Adventure</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Comedy</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Horror</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mystery</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Non-fiction</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Romance</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Science Fiction</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QComboBox" name="comboBox_2">
+      <item>
+       <property name="text">
+        <string>None</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Action</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Adventure</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Comedy</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Horror</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mystery</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Non-fiction</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Romance</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Science Fiction</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="lineEdit_2"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Genre 1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Title</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QCheckBox" name="checkBox">
+      <property name="text">
+       <string>Available?</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>-21</y>
+     <width>751</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #373737;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>40</y>
+      <width>291</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255,255,255);</string>
+    </property>
+    <property name="text">
+     <string>Modify Book</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
