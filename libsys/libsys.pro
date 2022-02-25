@@ -12,6 +12,7 @@ SOURCES += \
     addmod_users.cpp \
     admin.cpp \
     bookdetails.cpp \
+    booksystem.cpp \
     filesystem.cpp \
     login.cpp \
     main.cpp \
@@ -22,6 +23,7 @@ HEADERS += \
     addmod_users.h \
     admin.h \
     bookdetails.h \
+    booksystem.h \
     filesystem.h \
     login.h \
     mainwindow.h \

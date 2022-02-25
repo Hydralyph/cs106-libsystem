@@ -16,7 +16,6 @@ public:
     ~Login();
 
 signals:
-    void login_button(bool);
 
 
 private slots:

@@ -2,10 +2,12 @@
 #define FILESYSTEM_H
 
 #include <QStringList>
+#include <QVector>
 #include <QFile>
 #include <QTextStream>
 #include <QMessageBox>
 #include <QCoreApplication>
+#include "booksystem.h"
 
 typedef class Filesystem
 {
@@ -21,7 +23,7 @@ public:
 
     // ===== GENERAL FS FUNCTIONS =====
     static void SetFilenameOnStartup();
-    static QStringList loadCatalogueData();                                                         // IMPLEMENTED, NOT TESTED
+    static QVector<Book*> loadCatalogueData();                                                         // IMPLEMENTED, NOT TESTED
     static QStringList loadUserData();                                                              // IMPLEMENTED, NOT TESTED
     static QStringList loadUserCheckedOutData();                                                    // IMPLEMENTED, NOT TESTED
     static QStringList loadUserReservedData();                                                      // IMPLEMENTED, NOT TESTED
