@@ -12,7 +12,6 @@ Login::Login(QWidget *parent) :
     ui->setupUi(this);
     this->setFixedSize(this->width(), this->height());
     setWindowFlags(windowFlags() & ~Qt::WindowContextHelpButtonHint);
-    connect(this, SIGNAL(login_button(int)), mw, SLOT(on_login(int)));
 }
 
 Login::~Login()
@@ -27,7 +26,6 @@ void Login::on_login_clicked()
 
     if (username == "Test" && password == "Test") {
         int nomValue = true;
-        emit login_button(nomValue);
         // emit login_button(log);
         // qDebug() << log;
         QMessageBox::information(this,"Login successful.","Logged in successfully.");

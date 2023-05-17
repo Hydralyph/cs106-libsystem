@@ -24,8 +24,10 @@ void FS::SetFilenameOnStartup()
     FS::userReservedFile.setFileName(appDir + "/res/libsys-userreserveddata.csv");
 }
 
-QStringList FS::loadCatalogueData()
+QVector<Book*> FS::loadCatalogueData()
 {
+    QVector<Book*> temp;
+
     FS::catalogueFile.open(QIODevice::ReadOnly | QIODevice::Text);
     QStringList splitList;
     QTextStream instream(&FS::catalogueFile);
@@ -36,7 +38,19 @@ QStringList FS::loadCatalogueData()
         splitList.append(lineIn.split(",,"));
     }
     FS::catalogueFile.close();
-    return splitList;
+
+    for(int i = 0; i < splitList.length(); i += 6)
+    {
+        Book* book = new Book();
+        book->SetTitle(splitList[i]);
+        book->SetAuthor(splitList[i + 1]);
+        book->SetGenre1(splitList[i + 2]);
+        book->SetGenre2(splitList[i + 3]);
+        book->SetISBN(splitList[i + 4]);
+        book->SetIsAvailable(splitList[i + 5].toInt());
+    }
+
+    return temp;
 }
 
 QStringList FS::loadUserData()

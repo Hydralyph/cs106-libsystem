@@ -23,8 +23,8 @@ void bookdetails::on_checkBox_stateChanged(int arg1)
 
 
     if (ui->checkBox->isChecked()) {
-        QMessageBox::warning(this,"Hello hello?",
-                             QString("Welcome to your new job at the new and improved Freddy Fazbear's %1 %2 pizza.")
+        QMessageBox::warning(this,"IsAvailable Set.",
+                             QString("The book will be marked as available.")
                              .arg(genre1,genre2));
     } else {
 

@@ -153,7 +153,7 @@
     <item row="5" column="0">
      <widget class="QCheckBox" name="checkBox">
       <property name="text">
-       <string>Available?</string>
+       <string>Book is Avaliable?</string>
       </property>
      </widget>
     </item>

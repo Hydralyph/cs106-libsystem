@@ -23,8 +23,6 @@ public slots:
 
 private slots:
     void on_loginbutton_clicked();
-    void on_login(int nomVal);
-
 
 private:
     Ui::MainWindow *ui;
